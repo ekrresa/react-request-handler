@@ -22,4 +22,9 @@ module.exports = {
 	rules: {
 		'@typescript-eslint/explicit-function-return-type': 'warn',
 	},
+	settings: {
+		'import/resolver': {
+			typescript: {},
+		},
+	},
 };
