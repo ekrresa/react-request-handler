@@ -2,6 +2,7 @@ module.exports = {
 	env: {
 		browser: true,
 		es2021: true,
+		node: true,
 	},
 	extends: [
 		'eslint:recommended',
@@ -20,11 +21,14 @@ module.exports = {
 	},
 	plugins: ['react', '@typescript-eslint'],
 	rules: {
-		'@typescript-eslint/explicit-function-return-type': 'warn',
+		'@typescript-eslint/explicit-function-return-type': 'off',
 	},
-	settings: {
-		'import/resolver': {
-			typescript: {},
+	overrides: [
+		{
+			files: ['*.ts'],
+			rules: {
+				'@typescript-eslint/explicit-function-return-type': 'error',
+			},
 		},
-	},
+	],
 };
