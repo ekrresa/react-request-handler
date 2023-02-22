@@ -1,7 +1,7 @@
 {
-	"name": "react-request-wrapper",
+	"name": "react-request-handler",
 	"version": "0.0.1",
-	"description": "",
+	"description": "A simple package for handling loading and error states of network requests, with added support for retries.",
 	"type": "module",
 	"main": "dist/cjs/index.js",
 	"module": "dist/esm/index.js",
@@ -22,7 +22,7 @@
 		"name": "Ochuko Ekrresa",
 		"email": "kelvinekrresa@gmail.com"
 	},
-	"license": "ISC",
+	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/ekrresa/react-request-wrapper/issues"
 	},
