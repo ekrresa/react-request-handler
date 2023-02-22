@@ -10,7 +10,7 @@
 		"build": "rollup -c",
 		"storybook": "start-storybook -p 6006",
 		"build-storybook": "build-storybook",
-		"prepare": "husky install",
+		"prepare": "is-ci || husky install",
 		"lint": "eslint --ext .tsx,.ts"
 	},
 	"repository": {
@@ -58,6 +58,7 @@
 		"eslint-plugin-react": "^7.32.2",
 		"eslint-plugin-react-hooks": "^4.6.0",
 		"husky": "^8.0.0",
+		"is-ci": "^3.0.1",
 		"lint-staged": "^13.1.1",
 		"prettier": "^2.8.3",
 		"react": "^18.2.0",
