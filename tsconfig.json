@@ -1,13 +1,10 @@
 {
 	"compilerOptions": {
-		"target": "es2016",
-		"jsx": "react",
+		"target": "ESNext",
+		"jsx": "react-jsx",
 		"module": "ESNext",
-		"declaration": true,
+		"lib": ["DOM", "DOM.Iterable", "ESNext"],
 		"noEmit": true,
-		"declarationDir": "types",
-		"sourceMap": true,
-		"outDir": "dist",
 		"rootDir": "src",
 		"moduleResolution": "node",
 		"removeComments": true,
@@ -17,5 +14,6 @@
 		"strict": true,
 		"noUncheckedIndexedAccess": true,
 		"skipLibCheck": true
-	}
+	},
+	"exclude": ["node_modules", "dist", "stories", "tsup.config.ts"]
 }

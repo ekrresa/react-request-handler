@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './styles.css';
+import classes from './spinner.module.css';
 
 interface Props {
 	size?: number;
@@ -8,7 +8,7 @@ interface Props {
 export function Spinner({ size = 40, color = '#000000' }: Props) {
 	return (
 		<div
-			className="spinner"
+			className={classes.spinner}
 			style={{
 				width: size,
 				color,
