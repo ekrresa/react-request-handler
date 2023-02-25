@@ -1,4 +1,6 @@
 .changeset
 .github
+.storybook
 src
+stories
 tsconfig.json
