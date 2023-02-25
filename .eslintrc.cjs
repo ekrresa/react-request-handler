@@ -6,10 +6,10 @@ module.exports = {
 	},
 	extends: [
 		'eslint:recommended',
-		'plugin:react/recommended',
-		'plugin:react-hooks/recommended',
 		'plugin:@typescript-eslint/recommended',
+		'plugin:react/recommended',
 		'plugin:prettier/recommended',
+		'plugin:storybook/recommended',
 	],
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
@@ -20,6 +20,11 @@ module.exports = {
 		sourceType: 'module',
 	},
 	plugins: ['react', '@typescript-eslint'],
+	settings: {
+		react: {
+			version: 'detect',
+		},
+	},
 	rules: {
 		'@typescript-eslint/explicit-function-return-type': 'off',
 	},

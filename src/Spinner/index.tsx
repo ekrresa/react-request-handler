@@ -1,14 +1,18 @@
 import * as React from 'react';
-import './styles.css';
+import classes from './spinner.module.css';
 
-export const Spinner = ({ size = 40, color = '#000000' }) => {
+interface Props {
+	size?: number;
+	color?: string;
+}
+export function Spinner({ size = 40, color = '#000000' }: Props) {
 	return (
 		<div
-			className="spinner"
+			className={classes.spinner}
 			style={{
 				width: size,
 				color,
 			}}
 		></div>
 	);
-};
+}

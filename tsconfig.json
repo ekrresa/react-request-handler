@@ -1,21 +1,19 @@
 {
-  "compilerOptions": {
-    "target": "es2016",
-    "jsx": "react",
-    "module": "ESNext",
-    "declaration": true,
-    "emitDeclarationOnly": true,
-    "declarationDir": "types",
-    "sourceMap": true,
-    "outDir": "dist",
-    "rootDir": "src",
-    "moduleResolution": "node",
-    "removeComments": true,
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "noUncheckedIndexedAccess": true,
-    "skipLibCheck": true
-  }
+	"compilerOptions": {
+		"target": "ESNext",
+		"jsx": "react-jsx",
+		"module": "ESNext",
+		"lib": ["DOM", "DOM.Iterable", "ESNext"],
+		"noEmit": true,
+		"rootDir": "src",
+		"moduleResolution": "node",
+		"removeComments": true,
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"strict": true,
+		"noUncheckedIndexedAccess": true,
+		"skipLibCheck": true
+	},
+	"exclude": ["node_modules", "dist", "stories", "tsup.config.ts"]
 }
